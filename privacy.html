@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MigraLog — Privacy Policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><a href="index.html">← Legal</a> <a href="terms.html">Terms of Service</a></nav>
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: October 20, 2026</p>
+
+<p>MigraLog ("the app") is a personal journal for logging migraine attacks. It is developed and maintained by an independent developer ("we", "us"). This policy explains what data the app handles and why.</p>
+
+<h2>Your journal stays on your device</h2>
+<p>MigraLog does not require an account. Your attack log (dates, intensity, symptoms, triggers, medications, notes) is stored locally on your device only. We do not have a server that holds your journal, so we cannot read, export, or restore it for you. Deleting the app, or using "Delete all data" in Settings, removes it from your device.</p>
+
+<h2>AI-assisted entry</h2>
+<p>If you use "Describe with AI", the text you typed or dictated, the names of the medications in your list, and your current local time are sent over an encrypted connection to a small proxy service we operate (hosted on Cloudflare Workers). The proxy forwards the request to OpenRouter, an AI routing service, which passes it to an AI model provider to turn your text into structured fields. The result is returned to your device, where you review it before saving.</p>
+<ul>
+<li>We configure requests so that they are only routed to providers that, under their stated policy, do not use the data to train models.</li>
+<li>We do not store or log the content of your requests. The AI provider may retain requests for a limited period for abuse monitoring and legal compliance.</li>
+<li>The proxy identifies your installation with a random identifier generated on your device. It is not linked to your name, email, or any account, and is used only to limit the number of requests per day. Request counters are kept for about two days.</li>
+<li>As infrastructure providers, Cloudflare and OpenRouter process technical metadata (such as IP address) needed to deliver the request. We do not store it.</li>
+</ul>
+<p>Please do not include other people's personal information in your entries. You can always log manually instead; manual entries never leave your device.</p>
+
+<h2>Voice dictation</h2>
+<p>If you use the microphone, speech is converted to text by the speech recognition built into your device's operating system (Apple). Where supported, recognition happens on the device; otherwise Apple's speech services may process the audio under Apple's privacy policy. We never receive the audio.</p>
+
+<h2>In-app purchases and subscriptions</h2>
+<p>Pro features are unlocked through in-app purchases processed by Apple's App Store and managed on our behalf by RevenueCat, a third-party subscription management service. RevenueCat receives an anonymous app-generated user identifier and purchase/subscription data (such as product identifiers and purchase status) needed to unlock Pro features and verify your subscription. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a>. Payment details are handled entirely by Apple and never reach us.</p>
+
+<h2>Notifications</h2>
+<p>The app can show a local reminder (for example, to close an attack that was left open). These notifications are created on your device; we do not run a push notification server.</p>
+
+<h2>What we don't do</h2>
+<p>MigraLog contains no advertising SDK and does not track you across other apps or websites. It requests no access to your location, camera, photos, or contacts. If we ever add crash reporting or analytics, we will update this policy first, and such data will not include your journal entries or notes.</p>
+
+<h2>Not a medical device</h2>
+<p>MigraLog is a personal journal. It does not provide medical advice, diagnosis, or treatment.</p>
+
+<h2>Your choices</h2>
+<p>You control your journal on your device: you can edit or delete any entry, delete all data in Settings, deny microphone or notification access in your device settings, and choose not to use the AI features. Because we do not hold your journal, there is nothing for us to delete on our side other than what you may send us by email.</p>
+
+<h2>Contact and support</h2>
+<p>If you email us for support or feedback, we receive whatever information you choose to include (for example your email address and message), used only to respond to you.</p>
+
+<h2>Children's privacy</h2>
+<p>MigraLog is not directed at children and we do not knowingly collect data from children.</p>
+
+<h2>Changes to this policy</h2>
+<p>We may update this policy from time to time; the "Last updated" date above reflects the latest revision.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:zemantservices@gmail.com">zemantservices@gmail.com</a></p>
+
+<footer>MigraLog</footer>
+</body>
+</html>
