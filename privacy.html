@@ -35,12 +35,11 @@
 <h2>In-app purchases and subscriptions</h2>
 <p>Pro features are unlocked through in-app purchases processed by Apple's App Store and managed on our behalf by RevenueCat, a third-party subscription management service. RevenueCat receives an anonymous app-generated user identifier and purchase/subscription data (such as product identifiers and purchase status) needed to unlock Pro features and verify your subscription. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a>. Payment details are handled entirely by Apple and never reach us.</p>
 
-<h2>Optional context: time zone, Apple Health, weather</h2>
+<h2>Optional context: time zone, Apple Health</h2>
 <p>These sources are off until you turn them on in Settings, and each can be turned off again.</p>
 <ul>
 <li><strong>Time zone.</strong> The app notes on your device when your time zone changes. It never leaves your device.</li>
 <li><strong>Apple Health (iOS).</strong> If you allow it, the app reads sleep, steps, exercise minutes and heart rate variability from Apple Health when you open an attack, and shows them next to it. These values are not saved by the app, not sent anywhere, and not used by the AI features. You control access in the Health app.</li>
-<li><strong>Weather.</strong> You choose a city by name; the app never uses your device location. The text you type to search for a city, and later the place you pick (rounded to about 10 km) with the time of an attack, are sent to our proxy service (Cloudflare Workers) together with the random installation identifier described above, which is used only to limit requests per day (counters are kept for about two days). The proxy asks OpenStreetMap's Nominatim service to find the place and NASA's POWER service for the weather there; they receive the text or the rounded place and a date range, not the identifier. Your journal entries are not sent. The result is saved on your device with the attack. We do not store or log these requests; Cloudflare, OpenStreetMap and NASA process technical metadata such as IP addresses to deliver them. Place data © OpenStreetMap contributors (ODbL); weather data from NASA POWER (CC BY 4.0).</li>
 </ul>
 
 <h2>Notifications</h2>
