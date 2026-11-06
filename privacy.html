@@ -9,7 +9,7 @@
 <body>
 <nav><a href="index.html">← Legal</a> <a href="terms.html">Terms of Service</a></nav>
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: October 21, 2026</p>
+<p class="updated">Last updated: November 6, 2026</p>
 
 <p>MigraLog ("the app") is a personal journal for logging migraine attacks. It is developed and maintained by an independent developer ("we", "us"). This policy explains what data the app handles and why.</p>
 
@@ -17,17 +17,18 @@
 <p>MigraLog does not require an account. Your attack log (dates, intensity, symptoms, triggers, medications, notes) is stored locally on your device only. We do not have a server that holds your journal, so we cannot read, export, or restore it for you. Deleting the app, or using "Delete all data" in Settings, removes it from your device.</p>
 
 <h2>AI-assisted entry</h2>
-<p>If you use "Describe with AI", the text you typed or dictated, the names of the medications in your list, and your current local time are sent over an encrypted connection to a small proxy service we operate (hosted on Cloudflare Workers). The proxy forwards the request to OpenRouter, an AI routing service, which passes it to an AI model provider to turn your text into structured fields. The result is returned to your device, where you review it before saving.</p>
+<p><strong>Your permission comes first.</strong> Before anything is sent to the AI service for the first time, the app shows what is sent, who receives it and why, and asks for your permission. If you choose "Not now", nothing is sent and you log by hand. You can turn this on or off at any time in Settings → AI → "Send text to AI".</p>
+<p>If you allow it and use "Describe with AI" or Attack mode, the text you typed or dictated, the names of the medications in your list, and your current local time are sent over an encrypted connection to a small proxy service we operate (hosted on Cloudflare Workers). The proxy forwards the request to OpenRouter, an AI routing service, which passes it to the Claude model by Anthropic, the AI model provider, to turn your text into structured fields. The result is returned to your device, where you review it before saving. Your journal entries themselves are not sent.</p>
 <ul>
 <li>We configure requests so that they are only routed to providers that, under their stated policy, do not use the data to train models.</li>
-<li>We do not store or log the content of your requests. The AI provider may retain requests for a limited period for abuse monitoring and legal compliance.</li>
+<li>We do not store or log the content of your requests. The AI provider (Anthropic) may retain requests for a limited period for abuse monitoring and legal compliance. We only use AI providers whose terms protect this data at least as well as this policy does, including not using it to train models.</li>
 <li>The proxy identifies your installation with a random identifier generated on your device. It is not linked to your name, email, or any account, and is used only to limit the number of requests per day. Request counters are kept for about two days.</li>
 <li>As infrastructure providers, Cloudflare and OpenRouter process technical metadata (such as IP address) needed to deliver the request. We do not store it.</li>
 </ul>
 <p>Please do not include other people's personal information in your entries. You can always log manually instead; manual entries never leave your device.</p>
 
 <h2>Asking questions about your own data</h2>
-<p>If you use "Ask your data" (Pro), the text of your question, the names of the medications in your list and today's date are sent through the same proxy service and AI routing described above, only to turn the question into a structured search. Your entries are not sent: the answer is counted on your device from your journal. The same retention, identifier and metadata terms apply. Questions are not saved by the app; the conversation disappears when the app is closed.</p>
+<p>If you have allowed AI processing and use "Ask your data" (Pro), the text of your question, the names of the medications in your list and today's date are sent through the same proxy service and AI routing described above, only to turn the question into a structured search. Your entries are not sent: the answer is counted on your device from your journal. The same retention, identifier and metadata terms apply. Questions are not saved by the app; the conversation disappears when the app is closed.</p>
 
 <h2>Voice dictation</h2>
 <p>If you use the microphone, speech is converted to text by the speech recognition built into your device's operating system (Apple). Where supported, recognition happens on the device; otherwise Apple's speech services may process the audio under Apple's privacy policy. We never receive the audio.</p>
